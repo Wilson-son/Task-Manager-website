@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CiFlag1 } from "react-icons/ci";
 import { FiEdit2 } from "react-icons/fi";
 import { RiDeleteBin5Line } from "react-icons/ri";
-import EditTask from "./Edittask";
+import EditTask from "./EditTask";
 
 function Tasklist({ filteredTasks, onStatusChange, deleteTask, updateTask }) {
   const [editingTaskId, setEditingTaskId] = useState(null);
