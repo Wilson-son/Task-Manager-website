@@ -1,4 +1,4 @@
-import React from "react";
+
 import { IoIosSearch } from "react-icons/io";
 import { FiFilter } from "react-icons/fi";
 
