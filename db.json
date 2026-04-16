@@ -1,0 +1,58 @@
+{
+  "tasks": [
+    {
+      "taskTitle": "Review pull requests",
+      "description": "Check and approve pending PRs from the team",
+      "priority": "Low",
+      "dueDate": "2026-01-15",
+      "tags": "#development #code-review",
+      "status": "To do",
+      "id": 1767624767885
+    },
+    {
+      "taskTitle": "Database optimization",
+      "description": "Optimize queries and add indexes",
+      "priority": "High",
+      "dueDate": "2026-01-08",
+      "tags": "#backend",
+      "status": "To do",
+      "id": 1767624824444
+    },
+    {
+      "taskTitle": "Design new dashboard",
+      "description": "Create mockups for the analytics dashboard",
+      "priority": "High",
+      "dueDate": "2026-01-05",
+      "tags": "#design   #ui/ux",
+      "status": "In progress",
+      "id": 1767624880857
+    },
+    {
+      "taskTitle": "Implement authentication",
+      "description": "Set up OAuth and JWT authentication",
+      "priority": "Medium",
+      "dueDate": "2026-01-03",
+      "tags": "#development #security",
+      "status": "In progress",
+      "id": 1767624929123
+    },
+    {
+      "taskTitle": "Update documentation",
+      "description": "Add API documentation for new endpoints",
+      "priority": "Low",
+      "dueDate": "2026-01-07",
+      "tags": "#documentation",
+      "status": "Completed",
+      "id": 1767624978825
+    },
+    {
+      "taskTitle": "Fix UI overflow and improve responsive layout",
+      "description": "This task focuses on resolving layout overflow issues that cause content to break outside its container and ensuring the user interface adapts smoothly across different screen sizes. It includes identifying elements that exceed container boundaries, applying proper CSS properties such as flexible widths, wrapping, and overflow handling, and improving spacing and alignment. The goal is to create a clean, consistent, and responsive layout that maintains usability and visual balance on desktop, tablet and mobile devices.",
+      "priority": "Medium",
+      "dueDate": "2026-01-04",
+      "tags": "frontend",
+      "status": "To do",
+      "id": 1767625120481
+    }
+  ]
+}

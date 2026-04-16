@@ -15,18 +15,29 @@ function App() {
     }
   });
 
+  useEffect(() => {
+    fetch("http://localhost:5000/tasks")
+      .then((res) => res.json())
+      .then((data) => {
+        setTasks(data);
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
   const [search, setSearch] = useState("");
   const [status, setStatus] = useState("All Status");
   const [priority, setPriority] = useState("All Priority");
 
   const filteredTasks = tasks.filter((task) => {
-    const matchedSearch = task.taskTitle.toLowerCase().includes(search.toLowerCase());
+    const matchedSearch = task.taskTitle
+      .toLowerCase()
+      .includes(search.toLowerCase());
     const matchedStatus = status === "All Status" || task.status === status;
-    const matchedPriority = priority === "All Priority" || task.priority === priority;
+    const matchedPriority =
+      priority === "All Priority" || task.priority === priority;
     return matchedSearch && matchedStatus && matchedPriority;
   });
 
-  
   function addTask(newTask) {
     setTasks((prev) => [...prev, newTask]);
   }
@@ -34,7 +45,9 @@ function App() {
   // Update task status
   function updateTaskStatus(id, newStatus) {
     setTasks((prev) =>
-      prev.map((task) => (task.id === id ? { ...task, status: newStatus } : task))
+      prev.map((task) =>
+        task.id === id ? { ...task, status: newStatus } : task
+      )
     );
   }
 
